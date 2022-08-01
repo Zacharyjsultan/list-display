@@ -7,8 +7,10 @@ console.log(spotsListEl);
 
 for (let kind of spots) {
     const spotsEl = document.createElement('p');
-
+    spotsEl.textContent = kind;
     spotsListEl.append(spotsEl);
+    
+    spotsEl.classList.add('spot-kind');
 }
 // initialize global state
 
