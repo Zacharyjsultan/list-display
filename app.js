@@ -1,17 +1,16 @@
 // import functions and grab DOM elements
 import { spots } from './spots-data.js';
+import { renderSpotKind } from './render-spots.js';
 
-const spotsListEl = document.getElementById ('spots-list');
-
-console.log(spotsListEl);
+const spotListEl = document.getElementById ('spots-list');
 
 for (let kind of spots) {
-    const spotsEl = document.createElement('p');
-    spotsEl.textContent = kind;
-    spotsListEl.append(spotsEl);
+    const spotsEl = renderSpotKind(kind);
     
-    spotsEl.classList.add('spot-kind');
+    spotListEl.append(spotsEl);
 }
+
+
 // initialize global state
 
 // set event listeners 
