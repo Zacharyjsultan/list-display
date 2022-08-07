@@ -8,16 +8,16 @@ import { renderVideo } from './render-videos.js';
 
 const spotListEl = document.getElementById ('spots-list');
 
-for (let kind of spots) {
-    const spotsEl = renderSpotKind(kind);
+for (let spot of spots) {
+    const spotsEl = renderSpotKind(spot);
     
     spotListEl.append(spotsEl);
 }
 
 const setUpListEl = document.getElementById('set-up-list');
 
-for (let type of setUps) {
-    const setUpsEl = renderSetUps(type);
+for (let kind of setUps) {
+    const setUpsEl = renderSetUps(kind);
 
     setUpListEl.append(setUpsEl);
 }
