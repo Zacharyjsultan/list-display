@@ -1,0 +1,1 @@
+export const spots = ['ledges', 'stairs', 'banks', 'pole-jams', 'curbs', 'full-pipes', 'bowls', 'pools', 'flat-ground', 'manual-pads'];

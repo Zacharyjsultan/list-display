@@ -1,0 +1,1 @@
+export const disciplines = ['transition', 'technical', 'pools', 'interdisciplinary', 'vert', 'sets', 'ledges'];

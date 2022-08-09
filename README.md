@@ -24,3 +24,14 @@ There are only so many things we do in an app.
     4.  Then, in app.js import your array and render function and grab a container element from the DOM.
     5.  Loops through your array, and for each object, render and appends a styled candy element to the container element you grabbed from the DOM.
     6.  Note: do this process **one array at a time**. Do not write 4 arrays, then 4 render functions, etc. Please work through the first array, then the first render function, then the first display function.
+
+
+// 1. create an array - export
+// 2. import array into app.js
+// 3. make dom for section
+// 4. make for of loop
+// 5. render and append
+// 6. add in text content and classlist
+// 7. create separate render function
+// 8. update the parameters
+// 8. plug function back into the loop

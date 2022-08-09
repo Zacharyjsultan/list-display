@@ -96,3 +96,31 @@ footer {
     }
 
   }
+
+  .div {
+    margin: 10px;
+    padding: 120px;
+  }
+  /* #spots-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  #discipline-list {
+    display: flexbox;
+    
+  }
+
+  #set-up-list {
+    display: flex;
+    flex-wrap: wrap;
+  
+
+    
+  }
+
+  #video-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+  } */
