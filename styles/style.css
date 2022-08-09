@@ -99,5 +99,24 @@ footer {
 
   #spots-list {
     display: flex;
+    flex-wrap: wrap;
+    
+  }
+  #discipline-list {
+    display: flexbox;
+    
+  }
+
+  #set-up-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+
+    
+  }
+
+  #video-list {
+    display: flex;
+    flex-wrap: wrap;
     
   }

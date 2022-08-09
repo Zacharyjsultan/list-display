@@ -3,8 +3,12 @@ import { spots } from './spots-data.js';
 import { renderSpotKind } from './render-spots.js';
 import { setUps } from './set-up-data.js';
 import { renderSetUps } from './render-set-up.js';
+
+import { renderDisciplines } from './render-discipline.js';
+import { disciplines } from './discipline-data.js';
+
 import { videos } from './videos-data.js';
-import { renderVideo } from './render-videos.js';
+import { renderVideos } from './render-videos.js';
 
 const spotListEl = document.getElementById ('spots-list');
 
@@ -22,9 +26,20 @@ for (let kind of setUps) {
     setUpListEl.append(setUpsEl);
 }
 
-const videoListEl = document.getElementById('videos-list');
+
+const disciplineListEl = document.getElementById('discipline-list');
+
+for (let discipline of disciplines) {
+    const disciplinesEl = renderDisciplines(discipline);
+
+    disciplineListEl.append(disciplinesEl);
+}
+
+const videoListEl = document.getElementById('video-list');
 
 for (let video of videos) {
-    const videoEl = renderVideo(video);
+    const videoEl = renderVideos(video);
+
     videoListEl.append(videoEl);
 }
+

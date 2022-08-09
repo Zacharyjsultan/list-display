@@ -1,1 +1,13 @@
 /* add home page styles here */
+
+#spots-list {
+    display: flex;
+    width: 40%;
+    ;
+}
+
+#set-up-list {
+    display: grid;
+   width: 250px;
+   height: 200px;
+}

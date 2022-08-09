@@ -1,17 +1,17 @@
 export const setUps = [
     {
-        trucks: 'loose',
-        wheels: 'hard',
-        deck: 'short',
+        trucks: 'loose trucks',
+        wheels: 'hard wheels',
+        deck: 'short wheelbase',
     },
     {
-        trucks: 'tight',
-        wheels: 'hard',
-        deck: 'medium',
+        trucks: 'tight trucks',
+        wheels: 'hard wheels',
+        deck: 'medium wheelbase',
     },
     {
-        trucks: 'loose',
-        wheels: 'soft',
-        deck: 'long',
+        trucks: 'loose trucks',
+        wheels: 'soft wheels',
+        deck: 'long wheelbase',
     }
 ];

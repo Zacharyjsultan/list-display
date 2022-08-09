@@ -1,31 +1,37 @@
-export function renderVideo(video) {
+export function renderVideos(video) {
     const videoEl = document.createElement('div');
     const topEl = document.createElement('div');
     const nameEl = document.createElement('h2');
-    const publicationEl = document.createElement('p');
+    const creatorEl = document.createElement('h3');
     const bottomEl = document.createElement('div');
     const leftEl = document.createElement('div');
     const rightEl = document.createElement('div');
-    
+    const genresEl = document.createElement('ul');
+    const publicationEl = document.createElement('p');
+   
 
     nameEl.textContent = video.title;
-    publicationEl.textContent = `published by ${video.publication.publisher}`;
+    creatorEl.textContent = `By ${video.creator}`;
+    publicationEl.textContent = `Published by ${video.publication.publisher} in ${video.publication.year}`;
+    
 
-    for (let publicationy of video.publications){
-        const publicationEl = document.createElement('li');
+    for (let genre of video.genres) {
+        const genreEl = document.createElement('li');
 
-        publicationEl.textContent = `${publicationy}`;
+        genreEl.textContent = `${genre}`;
 
-        publicationEl.append(publicationEl);
+        genresEl.append(genreEl);
     }
+
     videoEl.classList.add('video');
     bottomEl.classList.add('bottom');
     leftEl.classList.add('left');
     rightEl.classList.add('right');
     videoEl.append(topEl, bottomEl);
-    topEl.append(publicationEl);
+    topEl.append(nameEl, creatorEl);
     bottomEl.append(leftEl, rightEl);
-    leftEl.append(publicationEl);
+    leftEl.append(genresEl, publicationEl);
+   
 
     return videoEl;
 }
